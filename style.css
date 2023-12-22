@@ -16,13 +16,12 @@ body{
   display: grid;
   place-content: center;
   text-align: center;
-  height: 40rem;
+  height: 100%;
 }
 .title{
   font-weight: bold;
   font-size: xx-large;
   text-align: center;
-  padding-top: 10rem;
   margin-bottom: 1rem;
 }
 .newContent{
@@ -34,6 +33,7 @@ body{
   top: 50%; 
   transform: translateY(-50%);
   right: 10px;
+  cursor: pointer;
 }
 input{
   width: 40rem;
@@ -42,7 +42,7 @@ input{
   border: 2px solid black;
   font-family: inherit;
   font-size: inherit;
-  cursor:pointer ;
+  cursor: text;
 }
 .theList{
   display: grid;
@@ -81,16 +81,12 @@ input{
  Extra small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap
   */
-@media (min-width:345px) and (max-width: 576px) {
+@media (max-width: 576px) {
   body{
     height: 100svh;
   }
-  .container{
-    height: 100%;
-  }
   .title{
     font-size: 20px;
-    padding-top: 5rem;
     margin-bottom: 1px;
   }
   input{
@@ -124,12 +120,8 @@ input{
   body{
     height: 100svh;
   }
-  .container{
-    height: 100%;
-  }
   .title{
     font-size: x-large;
-    padding-top: 10rem;
     margin-bottom: 0.5rem;
   }
   input{
@@ -160,12 +152,8 @@ input{
 }
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width:992px) {
-  .container{
-    height: 100%;
-  }
   .title{
     font-size: xx-large;
-    padding-top: 10rem;
     margin-bottom: 1rem;
   }
   input{
