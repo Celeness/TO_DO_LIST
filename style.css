@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  pointer-events: none;
+}
+body{
+  background-image: linear-gradient(to bottom, #051937, #34265b, #712872, #b11b75, #eb1264);
+  font-family:'Caveat', cursive;
+  font-size: 24px;
+  height: 100vh;
+}
+.container{
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 40rem;
+}
+.title{
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+  padding-top: 10rem;
+  margin-bottom: 1rem;
+}
+.newContent{
+  position: relative;
+}
+.fa-plus{
+  padding: 10px;
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%);
+  right: 10px;
+}
+input{
+  width: 40rem;
+  padding: 0.9rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border: 2px solid black;
+  font-family: inherit;
+  font-size: inherit;
+  cursor:pointer ;
+}
+.theList{
+  display: grid;
+  place-content: center;
+}
+ .content{
+  background-color: white;
+  display: flex;
+  width: 40rem;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  list-style: none;
+} 
+.task{
+  width: 32rem;
+  font-size: 24px;
+  text-align: left
+} 
+.check{
+  cursor: pointer;
+  padding: 10px;
+}
+.delete-check{
+  cursor: pointer;
+  padding: 10px;
+}
+.line{
+  text-decoration: line-through;
+  text-decoration-thickness: 20%;
+  text-decoration-color: #EB1264;
+}
+/* 
+ Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+  */
+@media (min-width:345px) and (max-width: 576px) {
+  body{
+    height: 100svh;
+  }
+  .container{
+    height: 100%;
+  }
+  .title{
+    font-size: 20px;
+    padding-top: 5rem;
+    margin-bottom: 1px;
+  }
+  input{
+    width: 22rem;
+    padding: 0.5rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  .fa-plus{
+    right: 0px;
+  }
+  .content{
+    width: 22rem;
+    margin-top: 0.5rem;
+  } 
+  .task{
+    width: 12rem;
+    font-size: 16px;
+  } 
+  .check{ 
+    padding: 5px;
+  }
+  .delete-check{
+    padding: 5px;
+  }
+  .line{
+    text-decoration-thickness: 10%;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:768px) {
+  body{
+    height: 100svh;
+  }
+  .container{
+    height: 100%;
+  }
+  .title{
+    font-size: x-large;
+    padding-top: 10rem;
+    margin-bottom: 0.5rem;
+  }
+  input{
+    width: 28rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+  }
+  .fa-plus{
+    right: 0px;
+  }
+  .content{
+    width: 28rem;
+    margin-top: 0.5rem;
+  } 
+  .task{
+    width: 18rem;
+    font-size: 20px;
+  } 
+  .check{ 
+    padding: 5px;
+  }
+  .delete-check{
+    padding: 5px;
+  }
+  .line{
+    text-decoration-thickness: 10%;
+  }
+}
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:992px) {
+  .container{
+    height: 100%;
+  }
+  .title{
+    font-size: xx-large;
+    padding-top: 10rem;
+    margin-bottom: 1rem;
+  }
+  input{
+    width: 40rem;
+    padding: 0.9rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  .content{
+    width: 40rem;
+    margin-top: 1rem;
+  }
+  .task{
+    width: 32rem;
+    font-size: 24px;
+  }
+  .check{ 
+    padding: 10px;
+  }
+  .delete-check{
+    padding: 10px;
+  }
+  .line{
+    text-decoration-thickness: 18%;
+  }
+}
