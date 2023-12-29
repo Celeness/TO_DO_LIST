@@ -1,6 +1,6 @@
-// $(document).ready(function () {
-//   $('#task').focus()
-// })
+$(document).ready(function () {
+  $('#task').focus()
+})
 let noteList = [] // At first we have to emtpy array which we can store inputs
 $('#task').keydown(function (event) {
   let key = event.key
